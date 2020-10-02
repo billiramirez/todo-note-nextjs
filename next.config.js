@@ -4,4 +4,4 @@ const dotenvLoad = require("dotenv-load");
 dotenvLoad();
 
 withNextEnv = nextEnv();
-module.exports = withNextEnv({});
+module.exports = withNextEnv();
