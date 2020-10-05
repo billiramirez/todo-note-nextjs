@@ -15,8 +15,6 @@ export async function getServerSideProps() {
 }
 
 export default function Notes({ notes }) {
-  console.log(notes);
-
   return (
     <div sx={{ variante: "containers.page" }}>
       <h1> My Notes</h1>
