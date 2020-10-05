@@ -25,5 +25,3 @@ export async function getServerSideProps({ params, req, res }) {
     return { props: { note: data } };
   }
 }
-
-// coment this on
