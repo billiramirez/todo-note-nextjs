@@ -33,7 +33,7 @@ const handler = nc()
     res.json({ data: updated });
   })
   .delete((req, res) => {
-    const note = getNote(req.query.id);
+    const note = getNote(+req.query.id);
 
     if (!note) {
       res.status(404);
