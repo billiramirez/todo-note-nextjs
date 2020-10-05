@@ -1,7 +1,12 @@
 // pages/index.jsx
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import Link from "next/link";
+
+import dynamic from "next/dynamic";
+
+const Browser = dynamic(() => import("../src/components/browser"), {
+  ssr: false,
+});
 
 export default function Index({ content }) {
   return (
@@ -15,6 +20,7 @@ export default function Index({ content }) {
         }}
       >
         <h1 sx={{ fontSize: 8, my: 0 }}>{content.title}</h1>
+        <Browser />
       </div>
     </div>
   );
